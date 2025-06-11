@@ -1,0 +1,74 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<header class="header">
+  <nav class="nav container">
+    <div class="logo">Zéphyre</div>
+    <ul class="nav-links">
+      <li>
+        <a
+          [routerLink]="'/'"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+          data-page="home"
+          data-translate="nav.home"
+          >Accueil</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="'/minecraft'"
+          routerLinkActive="active"
+          class="nav-link"
+          data-page="minecraft"
+          data-translate="nav.minecraft"
+          >Minecraft</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="'/about'"
+          routerLinkActive="active"
+          class="nav-link"
+          data-page="about"
+          data-translate="nav.about"
+          >À propos</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="'/contact'"
+          routerLinkActive="active"
+          class="nav-link"
+          data-page="contact"
+          data-translate="nav.contact"
+          >Contact</a
+        >
+      </li>
+    </ul>
+    <div class="lang-switch">
+      <button class="lang-btn active" data-lang="fr">FR</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="mobile-menu-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+</header>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet />

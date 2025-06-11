@@ -1,0 +1,155 @@
+<main class="main">
+  <div id="minecraft" class="page">
+    <section class="minecraft-hero">
+      <div class="container">
+        <div class="minecraft-content">
+          <div class="server-status-main" id="server-status-main">
+            <i class="fas fa-circle pulse"></i>
+            <span data-translate="minecraft.status.online"
+              >Serveur en ligne</span
+            >
+          </div>
+          <h1 data-translate="minecraft.title">Serveur Minecraft Alummer</h1>
+          <p
+            data-translate="minecraft.subtitle"
+            style="font-size: 1.25rem; margin-top: 1rem; opacity: 0.9"
+          >
+            Expérience vanilla cross-platform - Versions 1.20.6 et plus
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="minecraft-grid">
+          <div class="server-info-card">
+            <h3 class="card-title">
+              <i class="fas fa-server"></i>
+              <span data-translate="minecraft.info.title"
+                >Informations du serveur</span
+              >
+            </h3>
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="info-label" data-translate="minecraft.info.type"
+                  >Type :</span
+                >
+                <span class="info-value">Vanilla</span>
+              </div>
+              <div class="info-item">
+                <span
+                  class="info-label"
+                  data-translate="minecraft.info.platform"
+                  >Plateforme :</span
+                >
+                <span
+                  class="info-value"
+                  data-translate="minecraft.info.crossplatform"
+                  >Cross-platform</span
+                >
+              </div>
+              <div class="info-item">
+                <span class="info-label" data-translate="minecraft.info.version"
+                  >Versions :</span
+                >
+                <span class="info-value">1.20.6+</span>
+              </div>
+              <div class="info-item">
+                <span
+                  class="info-label"
+                  data-translate="minecraft.info.difficulty"
+                  >Difficulté :</span
+                >
+                <span class="info-value" data-translate="minecraft.info.normal"
+                  >Normal</span
+                >
+              </div>
+              <div class="info-item">
+                <span class="info-label" data-translate="minecraft.info.uptime"
+                  >Disponibilité :</span
+                >
+                <span class="info-value">99.8%</span>
+              </div>
+            </div>
+
+            <div class="server-ip-card" onclick="copyServerIP()">
+              <div
+                style="font-weight: 600; margin-bottom: 0.5rem"
+                data-translate="minecraft.ip.label"
+              >
+                Adresse du serveur
+              </div>
+              <div class="server-ip-code">mc-insee-its.ovh</div>
+              <div
+                style="opacity: 0.9; font-size: 0.9rem"
+                data-translate="minecraft.ip.copy"
+              >
+                Cliquer pour copier
+              </div>
+            </div>
+          </div>
+
+          <div class="server-info-card">
+            <h3 class="card-title">
+              <i class="fas fa-users"></i>
+              <span data-translate="minecraft.players.title"
+                >Joueurs en ligne</span
+              >
+            </h3>
+            <div class="players-display">
+              <div class="player-count" id="player-count">
+                <span id="player-number">7</span>
+              </div>
+              <p data-translate="minecraft.players.subtitle">
+                joueurs connectés
+              </p>
+            </div>
+
+            <div class="connect-steps">
+              <h4
+                data-translate="minecraft.connect.title"
+                style="
+                  text-align: center;
+                  margin-bottom: 1.5rem;
+                  font-size: 1.25rem;
+                "
+              >
+                Comment se connecter
+              </h4>
+              <div class="steps-grid">
+                <div class="step">
+                  <div class="step-number">1</div>
+                  <h5 data-translate="minecraft.connect.step1.title">
+                    Ouvrir Minecraft
+                  </h5>
+                  <p data-translate="minecraft.connect.step1.desc">
+                    Lancez Minecraft 1.20.6+
+                  </p>
+                </div>
+                <div class="step">
+                  <div class="step-number">2</div>
+                  <h5 data-translate="minecraft.connect.step2.title">
+                    Multijoueur
+                  </h5>
+                  <p data-translate="minecraft.connect.step2.desc">
+                    Cliquez sur "Multijoueur"
+                  </p>
+                </div>
+                <div class="step">
+                  <div class="step-number">3</div>
+                  <h5 data-translate="minecraft.connect.step3.title">
+                    Ajouter serveur
+                  </h5>
+                  <p data-translate="minecraft.connect.step3.desc">
+                    Entrez l'adresse IP
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>

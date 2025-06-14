@@ -1,0 +1,16 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "minecraft": "Minecraft",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Zéphyre",
+    "subtitle": "Plateforme digitale moderne pour vos expériences en ligne",
+    "cta": {
+      "minecraft": "Serveur Minecraft",
+      "discover": "Découvrir"
+    }
+  }
+}

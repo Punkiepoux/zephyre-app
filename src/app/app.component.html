@@ -17,7 +17,7 @@
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
           class="nav-link"
-          >{{ 'nav.home' | translate }}</a
+          >{{ "nav.home" | translate }}</a
         >
       </li>
       <li>
@@ -25,29 +25,26 @@
           [routerLink]="'/minecraft'"
           routerLinkActive="active"
           class="nav-link"
-          >{{ 'nav.minecraft' | translate }}</a
+          >{{ "nav.minecraft" | translate }}</a
         >
       </li>
       <li>
-        <a
-          [routerLink]="'/about'"
-          routerLinkActive="active"
-          class="nav-link"
-          >{{ 'nav.about' | translate }}</a
-        >
+        <a [routerLink]="'/about'" routerLinkActive="active" class="nav-link">{{
+          "nav.about" | translate
+        }}</a>
       </li>
       <li>
         <a
           [routerLink]="'/contact'"
           routerLinkActive="active"
           class="nav-link"
-          >{{ 'nav.active' | translate }}</a
+          >{{ "nav.contact" | translate }}</a
         >
       </li>
     </ul>
     <div class="lang-switch">
-      <button (click)="setLanguage('fr')" class="lang-btn active">FR</button>
-      <button (click)="setLanguage('en')" class="lang-btn">EN</button>
+      <button (click)="setLanguage('fr')" class="lang-btn" [class.active]="currentLang === 'fr'">FR</button>
+      <button (click)="setLanguage('en')" class="lang-btn" [class.active]="currentLang === 'en'">EN</button>
     </div>
     <button class="mobile-menu-btn">
       <i class="fas fa-bars"></i>

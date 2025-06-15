@@ -14,6 +14,7 @@ import { TranslatePipe } from './pipes/translate.pipe';
 export class AppComponent implements OnInit {
   title = 'zephyre-app';
   currentRoute: string = '';
+  currentLang: string = 'fr';
 
   constructor(private router: Router, private translationService: TranslationService) {}
   ngOnInit() {
@@ -31,6 +32,8 @@ export class AppComponent implements OnInit {
 
   setLanguage(lang: string) {
     this.translationService.setLanguage(lang);
+    this.currentLang = lang;
+    console.log(this.currentLang);
   }
 }
 

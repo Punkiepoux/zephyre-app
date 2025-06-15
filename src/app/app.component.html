@@ -17,9 +17,7 @@
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
           class="nav-link"
-          data-page="home"
-          data-translate="nav.home"
-          >Accueil</a
+          >{{ 'nav.home' | translate }}</a
         >
       </li>
       <li>
@@ -27,9 +25,7 @@
           [routerLink]="'/minecraft'"
           routerLinkActive="active"
           class="nav-link"
-          data-page="minecraft"
-          data-translate="nav.minecraft"
-          >Minecraft</a
+          >{{ 'nav.minecraft' | translate }}</a
         >
       </li>
       <li>
@@ -37,9 +33,7 @@
           [routerLink]="'/about'"
           routerLinkActive="active"
           class="nav-link"
-          data-page="about"
-          data-translate="nav.about"
-          >À propos</a
+          >{{ 'nav.about' | translate }}</a
         >
       </li>
       <li>
@@ -47,15 +41,13 @@
           [routerLink]="'/contact'"
           routerLinkActive="active"
           class="nav-link"
-          data-page="contact"
-          data-translate="nav.contact"
-          >Contact</a
+          >{{ 'nav.active' | translate }}</a
         >
       </li>
     </ul>
     <div class="lang-switch">
-      <button class="lang-btn active" data-lang="fr">FR</button>
-      <button class="lang-btn" data-lang="en">EN</button>
+      <button (click)="setLanguage('fr')" class="lang-btn active">FR</button>
+      <button (click)="setLanguage('en')" class="lang-btn">EN</button>
     </div>
     <button class="mobile-menu-btn">
       <i class="fas fa-bars"></i>

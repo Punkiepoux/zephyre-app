@@ -23,7 +23,7 @@ export class TranslationService {
   }
 
   loadTranslations(lang: string) {
-    this.http.get(`assets/i18n/${lang}.json`).subscribe((data: any) => {
+    this.http.get(`assets/${lang}.json`).subscribe((data: any) => {
       this.translations = data;
     });
   }

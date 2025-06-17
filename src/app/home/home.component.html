@@ -5,8 +5,9 @@
         <div class="hero-content fade-in-up">
           <h1 data-translate="hero.title">Zéphyre</h1>
           <p class="hero-subtitle" data-translate="hero.subtitle">
-            Plateforme digitale moderne pour vos expériences en ligne
+            zéphyre.eu
           </p>
+          <!--
           <div class="cta-group">
             <a href="#" class="cta-button cta-primary" data-page="minecraft">
               <i class="fas fa-cube"></i>
@@ -17,54 +18,55 @@
               <span data-translate="hero.cta.discover">Découvrir</span>
             </a>
           </div>
+          -->
         </div>
       </div>
     </section>
 
     <section class="section services">
-      <div class="container">
-        <h2 class="section-title" data-translate="services.title">
-          Nos Services
-        </h2>
-        <p class="section-subtitle" data-translate="services.subtitle">
-          Découvrez ce que Zéphyre peut vous offrir
-        </p>
-
-        <div class="services-grid">
-          <div class="service-card fade-in-up">
-            <div class="service-icon">
-              <i class="fas fa-cube"></i>
+      <div class="grid fade-in">
+            <div class="card">
+                <h2 class="card-title">
+                    <i class="fas fa-rocket"></i>
+                    {{ "services.welcome.title" | translate }}
+                </h2>
+                <div class="card-content">
+                    <p>{{ "services.welcome.description" | translate }}</p>
+                    <a href="/about" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i>
+                        {{ "services.welcome.button" | translate }}
+                    </a>
+                </div>
             </div>
-            <h3 data-translate="services.minecraft.title">Serveur Minecraft</h3>
-            <p data-translate="services.minecraft.desc">
-              Serveur Minecraft cross-platform avec support multi-versions pour
-              une expérience de jeu optimale.
-            </p>
-          </div>
 
-          <div class="service-card fade-in-up">
-            <div class="service-icon">
-              <i class="fas fa-cloud"></i>
+            <div class="card">
+                <h2 class="card-title">
+                    <i class="fas fa-gamepad"></i>
+                    {{ "services.gaming.title" | translate }}
+                </h2>
+                <div class="card-content">
+                    <p>{{ "services.gaming.description" | translate }}</p>
+                    <a href="/minecraft" class="btn btn-secondary">
+                        <i class="fas fa-cube"></i>
+                        {{ "services.gaming.button" | translate }}
+                    </a>
+                </div>
             </div>
-            <h3 data-translate="services.hosting.title">Hébergement</h3>
-            <p data-translate="services.hosting.desc">
-              Solutions d'hébergement fiables et performantes pour vos projets
-              digitaux.
-            </p>
-          </div>
 
-          <div class="service-card fade-in-up">
-            <div class="service-icon">
-              <i class="fas fa-users"></i>
+            <div class="card">
+                <h2 class="card-title">
+                    <i class="fas fa-cogs"></i>
+                    {{ "services.tech.title" | translate }}
+                </h2>
+                <div class="card-content">
+                    <p>{{ "services.tech.description" | translate }}</p>
+                    <a href="/about" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        {{ "services.tech.button" | translate }}
+                    </a>
+                </div>
             </div>
-            <h3 data-translate="services.community.title">Communauté</h3>
-            <p data-translate="services.community.desc">
-              Rejoignez notre communauté active et bienveillante de passionnés
-              du digital.
-            </p>
-          </div>
         </div>
-      </div>
     </section>
   </div>
 </main>

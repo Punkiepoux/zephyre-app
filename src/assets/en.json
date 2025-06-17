@@ -12,5 +12,22 @@
       "minecraft": "Serveur Minecraft",
       "discover": "Découvrir"
     }
+  },
+  "services": {
+    "welcome": {
+      "title": "Welcome",
+      "description": "Discover Zéphyre, your versatile platform that combines innovative services and unique experiences. Explore our different sections to learn more about our projects.",
+      "button": "Learn more"
+    },
+    "gaming": {
+      "title": "Gaming",
+      "description": "Join our gaming community with our premium Minecraft server. Explore infinite worlds and live epic adventures with other players.",
+      "button": "Minecraft Server"
+    },
+    "tech": {
+      "title": "Technologies",
+      "description": "Our projects are powered by modern technologies: Kubernetes, Docker, and cloud-native infrastructures for optimal performance.",
+      "button": "Discover"
+    }
   }
 }

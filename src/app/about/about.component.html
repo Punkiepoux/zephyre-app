@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <h1 class="section-title" data-translate="about.title">
-          À propos de Zéphyre
+          {{ "about.title" | translate }}
         </h1>
         <div style="max-width: 800px; margin: 0 auto; text-align: center">
           <p
@@ -12,37 +12,39 @@
               color: var(--text-secondary);
               margin-bottom: 3rem;
             "
-            data-translate="about.description"
           >
-            Zéphyre est une plateforme digitale moderne qui propose des services
-            innovants et une communauté dynamique. Notre mission est de créer
-            des expériences numériques exceptionnelles.
+            {{ "about.description" | translate }}
           </p>
           <div class="services-grid">
             <div class="service-card">
               <div class="service-icon">
                 <i class="fas fa-rocket"></i>
               </div>
-              <h3 data-translate="about.mission.title">Notre Mission</h3>
+              <h3 data-translate="about.mission.title">
+                {{ "about.mission.title" | translate }}
+              </h3>
               <p data-translate="about.mission.desc">
-                Fournir des solutions digitales innovantes et accessibles à
-                tous.
+                {{ "about.mission.content" | translate }}
               </p>
             </div>
             <div class="service-card">
               <div class="service-icon">
                 <i class="fas fa-heart"></i>
               </div>
-              <h3 data-translate="about.values.title">Nos Valeurs</h3>
+              <h3 data-translate="about.values.title">
+                {{ "about.values.title" | translate }}
+              </h3>
               <p data-translate="about.values.desc">
-                Qualité, innovation et bienveillance au cœur de tout ce que nous
-                faisons.
+                {{ "about.values.content" | translate }}
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <p>&copy;{{ "footer" | translate }}</p>
+    </footer>
   </div>
-  >
 </main>

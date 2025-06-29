@@ -3,86 +3,115 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content fade-in-up">
-          <h1 data-translate="hero.title">Minecraft Server</h1>
+          <h1 data-translate="hero.title">
+            {{ "minecraft.title" | translate }}
+          </h1>
           <p class="hero-subtitle" data-translate="hero.subtitle">
-            Infinite adventures
+            {{ "minecraft.subtitle" | translate }}
           </p>
         </div>
       </div>
     </section>
 
-    <section>
-
-    </section>
+    <section></section>
 
     <section>
       <div class="card fade-in">
-            <h2 class="card-title">
-                <i class="fas fa-server"></i>
-                Server Information
-            </h2>
+        <h2 class="card-title">
+          <i class="fas fa-server"></i>
+          {{ "minecraft.serverInfo.title" | translate }}
+        </h2>
 
-            <div class="minecraft-status">
-                <div class="status-item">
-                    <div class="status-label">IP Address</div>
-                    <div class="server-ip" onclick="copyToClipboard('mc.insee-its.ovh')">mc.insee-its.ovh</div>
-                </div>
-
-                <div class="status-item">
-                    <div class="status-label">Status</div>
-                    <div class="status-value" id="serverStatus">
-                        <span class="status-offline">
-                            <span class="status-dot offline-dot"></span>
-                            Checking...
-                        </span>
-                    </div>
-                </div>
-
-                <div class="status-item">
-                    <div class="status-label">Players</div>
-                    <div class="status-value" id="playerCount">-- / --</div>
-                </div>
-
-                <div class="status-item">
-                    <div class="status-label">Ping</div>
-                    <div class="status-value" id="serverPing">-- ms</div>
-                </div>
+        <div class="minecraft-status">
+          <div class="status-item">
+            <div class="status-label">
+              {{ "minecraft.serverInfo.ip" | translate }}
             </div>
-
-            <div class="action-buttons">
-                <a href="http://map.insee-its.ovh" target="_blank" class="btn btn-primary">
-                    <i class="fas fa-map"></i>
-                    View BlueMap
-                </a>
-                <button class="btn btn-secondary" onclick="refreshServerStatus()">
-                    <i class="fas fa-sync-alt"></i>
-                    Refresh
-                </button>
-                <button class="btn btn-secondary" onclick="copyToClipboard('mc.insee-its.ovh')">
-                    <i class="fas fa-copy"></i>
-                    Copy IP
-                </button>
+            <div
+              class="server-ip"
+              onclick="copyToClipboard('mc.insee-its.ovh')"
+            >
+              mc.insee-its.ovh
             </div>
+          </div>
+
+          <div class="status-item">
+            <div class="status-label">
+              {{ "minecraft.serverInfo.status" | translate }}
+            </div>
+            <div class="status-value" id="serverStatus">
+              <span class="status-offline">
+                <span class="status-dot offline-dot"></span>
+                Checking...
+              </span>
+            </div>
+          </div>
+
+          <div class="status-item">
+            <div class="status-label">
+              {{ "minecraft.serverInfo.players" | translate }}
+            </div>
+            <div class="status-value" id="playerCount">-- / --</div>
+          </div>
+
+          <div class="status-item">
+            <div class="status-label">
+              {{ "minecraft.serverInfo.ping" | translate }}
+            </div>
+            <div class="status-value" id="serverPing">-- ms</div>
+          </div>
         </div>
 
-        <!-- Informations supplémentaires -->
-        <div class="card fade-in">
-            <h2 class="card-title">
-                <i class="fas fa-gamepad"></i>
-                How to join
-            </h2>
-            <div style="color: var(--text-secondary); line-height: 1.8;">
-                <p><strong>1.</strong> Launch Minecraft (version 1.20.6 minimum required)</p>
-                <p><strong>2.</strong> Click on "Multiplayer"</p>
-                <p><strong>3.</strong> Add a server with the address: <code style="background: rgba(141, 162, 144, 0.2); padding: 0.2rem 0.5rem; border-radius: 4px;">mc.insee-its.ovh</code></p>
-                <p><strong>4.</strong> Connect and explore!</p>
-            </div>
+        <div class="action-buttons">
+          <a
+            href="http://map.insee-its.ovh"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            <i class="fas fa-map"></i>
+            {{ "minecraft.serverInfo.bluemap" | translate }}
+          </a>
+          <button class="btn btn-secondary" onclick="refreshServerStatus()">
+            <i class="fas fa-sync-alt"></i>
+            {{ "minecraft.serverInfo.refresh" | translate }}
+          </button>
+          <button
+            class="btn btn-secondary"
+            onclick="copyToClipboard('mc.insee-its.ovh')"
+          >
+            <i class="fas fa-copy"></i>
+            {{ "minecraft.serverInfo.copyIP" | translate }}
+          </button>
         </div>
+      </div>
 
+      <!-- Informations supplémentaires -->
+      <div class="card fade-in">
+        <h2 class="card-title">
+          <i class="fas fa-gamepad"></i>
+          {{ "minecraft.join.title" | translate }}
+        </h2>
+        <div style="color: var(--text-secondary); line-height: 1.8">
+          <p><strong>1.</strong> {{ "minecraft.join.step1" | translate }}</p>
+          <p><strong>2.</strong> {{ "minecraft.join.step2" | translate }}</p>
+          <p>
+            <strong>3.</strong> {{ "minecraft.join.step3" | translate
+            }}<code
+              style="
+                background: rgba(141, 162, 144, 0.2);
+                padding: 0.2rem 0.5rem;
+                border-radius: 4px;
+              "
+              >mc.insee-its.ovh</code
+            >
+          </p>
+          <p><strong>4.</strong> {{ "minecraft.join.step4" | translate }}</p>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-      <p>&copy; 2024 Zéphyre. All rights reserved.</p>
+      <p>&copy;{{ "footer" | translate }}</p>
     </footer>
   </div>
 </main>

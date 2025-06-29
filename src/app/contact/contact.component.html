@@ -2,23 +2,31 @@
   <div id="contact" class="page">
     <section class="section">
       <div class="container">
-        <h1 class="section-title" data-translate="contact.title">Contact</h1>
+        <h1 class="section-title" data-translate="contact.title">
+          {{ "contact.title" | translate }}
+        </h1>
         <div style="max-width: 600px; margin: 0 auto">
           <div class="service-card" style="text-align: center">
             <div class="service-icon">
               <i class="fas fa-envelope"></i>
             </div>
-            <h3 data-translate="contact.subtitle">Contactez-nous</h3>
+            <h3 data-translate="contact.subtitle">
+              {{ "contact.subtitle" | translate }}
+            </h3>
             <p data-translate="contact.description" style="margin-bottom: 2rem">
-              Une question ? Une suggestion ? N'hésitez pas à nous écrire !
+              {{ "contact.description" | translate }}
             </p>
             <p href="mailto:contact@zephyre.eu" class="cta-button cta-primary">
               <i class="fas fa-envelope"></i>
-              contact
+              {{ "contact.button" | translate }}
             </p>
           </div>
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <p>&copy;{{ "footer" | translate }}</p>
+    </footer>
   </div>
 </main>

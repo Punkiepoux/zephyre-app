@@ -13,6 +13,7 @@
       "discover": "Découvrir"
     }
   },
+  "footer": " 2024 Zéphyre. Tout droits reservés.",
   "home": {
     "services": {
       "welcome": {
@@ -31,5 +32,44 @@
         "button": "Découvrir"
       }
     }
+  },
+  "minecraft": {
+    "title": "Serveur Minecraft",
+    "subtitle": "Infinite adventures",
+    "serverInfo": {
+      "title": "Informations du serveur",
+      "ip": "Adresse IP",
+      "status": "Statut",
+      "players": "Joueurs en ligne",
+      "ping": "Ping",
+      "bluemap": "Voir la carte",
+      "refresh": "Actualiser",
+      "copyIP": "Copier l'adresse IP"
+    },
+    "join": {
+      "title": "Comment rejoindre",
+      "step1": "Lancez Minecraft (1.20.6 ou supérieur)",
+      "step2": "Cliquez sur 'Multijoueur'",
+      "step3": "Ajoutez le serveur avec l'adresse IP suivante : ",
+      "step4": "Connectez-vous et profitez de l'aventure !"
+    }
+  },
+  "about": {
+    "title": "À propos de Zéphyre",
+    "description": "Zéphyre est une plateforme digitale moderne offrant des services innovants et une communauté dynamique. Notre mission est de créer des expériences numériques exceptionnelles.",
+    "mission": {
+      "title": "Notre mission",
+      "content": "Fournir des solutions numériques innovantes et accessibles à tous."
+    },
+    "values": {
+      "title": "Nos valeurs",
+      "content": "La qualité, l'innovation et la bienveillance sont au cœur de tout ce que nous faisons."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Contactez-nous",
+    "description": "Une question ? Une suggestion ? N'hésitez pas à nous écrire !",
+    "button": "contacter"
   }
 }

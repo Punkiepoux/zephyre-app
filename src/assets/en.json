@@ -13,6 +13,7 @@
       "discover": "Découvrir"
     }
   },
+  "footer": " 2024 Zéphyre. All rights reserved.",
   "home": {
     "services": {
       "welcome": {
@@ -31,5 +32,44 @@
         "button": "Discover"
       }
     }
+  },
+  "minecraft": {
+    "title": "Minecraft Server",
+    "subtitle": "Infinite adventures",
+    "serverInfo": {
+      "title": "Server Information",
+      "ip": "IP Address",
+      "status": "Status",
+      "players": "Online Players",
+      "ping": "Ping",
+      "bluemap": "View BlueMap",
+      "refresh": "Refresh",
+      "copyIP": "Copy IP Address"
+    },
+    "join": {
+      "title": "How to Join",
+      "step1": "Launch Minecraft (1.20.6 or higher)",
+      "step2": "Click on 'Multiplayer'",
+      "step3": "Add the server with the following IP address: ",
+      "step4": "Connect and explore!"
+    }
+  },
+  "about": {
+    "title": "About Zéphyre",
+    "description": "Zéphyre is a modern digital platform offering innovative services and a dynamic community. Our mission is to create exceptional digital experiences.",
+    "mission": {
+      "title": "Our mission",
+      "content": "Provide innovative and accessible digital solutions for everyone."
+    },
+    "values": {
+      "title": "Our values",
+      "content": "Quality, innovation, and kindness are at the heart of everything we do."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Contact us",
+    "description": "A question? A suggestion? Feel free to write to us!",
+    "button": "contact"
   }
 }

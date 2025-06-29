@@ -13,21 +13,23 @@
       "discover": "Découvrir"
     }
   },
-  "services": {
-    "welcome": {
-      "title": "Bienvenue",
-      "description": "Découvrez Zéphyre, votre plateforme polyvalente qui combine services innovants et expériences uniques. Explorez nos différentes sections pour en savoir plus sur nos projets.",
-      "button": "En savoir plus"
-    },
-    "gaming": {
-      "title": "Jeux",
-      "description": "Rejoignez notre communauté gaming avec notre serveur Minecraft premium. Explorez des mondes infinis et vivez des aventures épiques avec d'autres joueurs.",
-      "button": "Serveur Minecraft"
-    },
-    "tech": {
-      "title": "Technologies",
-      "description": "Nos projets sont propulsés par des technologies modernes : Kubernetes, Docker et des infrastructures cloud-native pour des performances optimales.",
-      "button": "Découvrir"
+  "home": {
+    "services": {
+      "welcome": {
+        "title": "Bienvenue",
+        "description": "Découvrez Zéphyre, votre plateforme polyvalente qui combine services innovants et expériences uniques. Explorez nos différentes sections pour en savoir plus sur nos projets.",
+        "button": "En savoir plus"
+      },
+      "gaming": {
+        "title": "Jeux",
+        "description": "Rejoignez notre communauté gaming avec notre serveur Minecraft premium. Explorez des mondes infinis et vivez des aventures épiques avec d'autres joueurs.",
+        "button": "Serveur Minecraft"
+      },
+      "tech": {
+        "title": "Technologies",
+        "description": "Nos projets sont propulsés par des technologies modernes : Kubernetes, Docker et des infrastructures cloud-native pour des performances optimales.",
+        "button": "Découvrir"
+      }
     }
   }
 }
